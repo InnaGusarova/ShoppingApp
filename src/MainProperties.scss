@@ -1,0 +1,67 @@
+$blue: #5956E9;
+$pink: #FABBC3;
+$yellow: #FFDC5F;
+$grey: #737373;
+$black: #000000;
+$white: #FFFFFF;
+
+@mixin ellipce {
+    position: absolute;
+    z-index: 0;
+    border-radius: 50%;
+}
+@mixin button {
+    width: 100%;
+    font: {
+        size: 20px;
+        weight: 700;
+    }
+    transition: box-shadow 0.5s ease-in;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+@mixin hover {
+    border: none;
+    transition: box-shadow 0.5s ease-in;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.5);
+}
+@mixin outline {
+    outline: none !important;
+}
+@mixin heading {
+    color: $black;
+    font: {
+        size: 60px;
+        weight: 700;
+    }
+    letter-spacing: 0.2px;
+    line-height: 67px;
+}
+@mixin text {
+    color: $grey;
+    font: {
+        weight: 500;
+        size: 24px;
+    }
+    letter-spacing: 0.2px;
+    line-height: 38px;
+}
+@mixin mediaState {
+    max-width: 337px;
+    width: 100%;
+    margin: 0 auto;
+}
+@mixin headingMedia {
+    color: $black;
+    font: {
+        size: 40px;
+        weight: 700;
+    }
+    letter-spacing: 0.2px;
+    line-height: 47px;
+    text-align: center;
+}

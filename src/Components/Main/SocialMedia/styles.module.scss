@@ -1,0 +1,67 @@
+@import '../../../MainProperties.scss';
+
+.socialMedia {
+    max-width: 1048px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+.textWrapper {
+    max-width: 429px;
+    width: 100%;
+    margin-left: 115px;
+}
+.heading {
+    font-size: 40px;
+    line-height: 57px;
+}
+.imgWrapper {
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.imgPink {
+    position: absolute;
+    bottom: 23px;
+    right: 307px;
+}
+.imgGTri {
+    position: absolute;
+    right: 58px;
+    top: -50px;
+}
+.imgyoutube {
+    position: absolute;
+    left: 43px;
+    top: 49px;
+}
+.imgFacebook {
+    position: absolute;
+    left: 99px;
+    top: 66px;
+}
+.imgtwitter {
+    position: absolute;
+    left: 152px;
+    top: 83px;
+}
+@media (max-width: 845px) {
+    .socialMedia {
+        flex-direction: column;
+    }
+    .textWrapper {
+        @include mediaState;
+        max-width: 383px;
+    }
+    .heading {
+        text-align: center;
+    }
+    .imgWrapper {
+        @include mediaState;
+        margin-top: 30px;
+        max-width: 416px;
+    }
+    .imgGTri {
+        right: -27px;
+    }
+}

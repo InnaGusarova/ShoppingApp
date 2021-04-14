@@ -1,0 +1,163 @@
+@import '../../../MainProperties.scss';
+
+.shoppingApp {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1170px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.blueEL {
+    @include ellipce;
+    right: -588px;
+    bottom: 47px;
+    background-color: $blue;
+    width: 1032px;
+    height: 1032px;
+    overflow: hidden;
+}
+.yellowElLeft {
+    @include ellipce;
+    left: -143px;
+    top: -237px;
+    width: 222px;
+    height: 222px;
+    background-color: $yellow;
+    overflow: hidden;
+}
+.yellowElRight {
+    @include ellipce;
+    width: 50px;
+    height: 50px;
+    top: 166px;
+    right: 465px;
+    background-color: $yellow;
+    animation: pulsing 3s infinite;
+}
+@-webkit-keyframes pulsing {
+    0% {
+      transform: scale(0.5, 0.5)
+    }
+    50% {
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      transform: scale(0.5, 0.5);
+    }
+}
+ @keyframes pulsing {
+    0% {
+      transform: scale(0.5, 0.5)
+    }
+    50% {
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      transform: scale(0.5, 0.5);
+    }
+}
+.yellowElDown {
+    @include ellipce;
+    width: 110px;
+    height: 110px;
+    bottom: 96px;
+    right: 573px;
+    background-color: $yellow;
+    animation: pulsing 3s infinite;
+}
+.pinkEL {
+    @include ellipce;
+    width: 58px;
+    height: 58px;
+    bottom: 348px;
+    left: -96px;
+    background-color: $pink;
+}
+.textWrapper {
+    width: 50%;
+    margin-top: 113px;
+    margin-left: 37px;
+    position: relative;
+    z-index: 10;
+}
+.heading {
+    @include heading;
+    margin-bottom: 17px;
+}
+.text {
+    @include text;
+    margin-top: 40px;
+    padding-right: 30px;
+}
+.button {
+    margin-top: 45px;
+    background-color: $blue ;
+    color: $white;
+    max-width: 204px;
+    height: 70px;
+    @include button;
+}
+.button:hover {
+    @include hover;
+}
+.button:focus {
+    @include outline;
+}
+.imgWrapper {
+    width: 50%;
+    z-index: 1;
+    overflow: hidden;
+}
+.imgKaktus {
+    max-width: 643px;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .yellowElRight, .yellowElLeft {
+        display: none;
+    }
+    .shoppingApp {
+        flex-direction: column;
+    }
+    .textWrapper {
+        @include mediaState;
+        width: 100%;
+        text-align: center;
+    } 
+    .imgWrapper {
+        @include mediaState;
+        max-width: 496px;
+        margin-top: 86px;
+    }
+    .heading {
+        @include headingMedia;
+        margin-top: 87px;
+        margin-bottom: 0px;
+        line-height: 67px;
+    }
+    .text {
+        margin: 36px auto 0 auto;
+        padding: 0;
+        max-width: 326px;
+    }
+    .button {
+        margin-top: 22px;
+    }
+    .blueEL {
+    @include ellipce;
+    right: -102px;
+    bottom: 43px;
+    background-color: $blue;
+    width: 540px;
+    height: 540px;
+    overflow: hidden;
+    }
+    .pinkEL {
+        bottom: 497px;
+        left: 123px;
+    }
+    .yellowElDown {
+        right: 362px;
+    }
+}

@@ -1,0 +1,21 @@
+@import '../../MainProperties.scss';
+
+.footer {
+    margin: 0 auto 38px auto;
+}
+.text {
+    text-align: center;
+    font: {
+        weight: 700;
+        size: 15px;
+    }
+}
+.website {
+    color: $grey;
+    text-decoration: none;
+}
+@media (max-width: 786px) {
+   .footer { 
+       margin-top: 90px;
+   }
+}
