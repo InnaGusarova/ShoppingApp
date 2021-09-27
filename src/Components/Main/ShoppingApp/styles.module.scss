@@ -73,6 +73,7 @@
     bottom: 348px;
     left: -96px;
     background-color: $pink;
+    animation: pulsing 3s infinite;
 }
 .textWrapper {
     width: 50%;
@@ -114,7 +115,7 @@
     width: 100%;
 }
 @media (max-width: 768px) {
-    .yellowElRight, .yellowElLeft {
+    .yellowElRight, .yellowElLeft, .blueEL {
         display: none;
     }
     .shoppingApp {
