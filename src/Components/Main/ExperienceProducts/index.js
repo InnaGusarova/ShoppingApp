@@ -8,7 +8,9 @@ function ExperienceProducts() {
         <section id="exp" className={styles.experienceProducts}>
             <div className={styles.textWrapper}>
                 <h2 className={styles.heading}>Experience products in AR</h2>
-                <p className={styles.text}>Have you tried Augmented Reality? Stop looking at boring galleries and start experiences each item.</p>
+                <p className={styles.text}>
+                    Have you tried Augmented Reality? Stop looking at boring galleries and start experiences each item.
+                </p>
             </div>
             <div className={styles.imgWrapper}>
                 <div className={styles.pinkElUp} />

@@ -10,11 +10,12 @@ function Header() {
 
     function handleClick() {
         setOpen(!isOpen)
+        document.body.classList.toggle('noScroll', !isOpen )
     }
 
     return (
         <header id="hello" className={styles.header}>
-            <img src={logoImg} className={styles.logo} alt="logo" />
+            <img src={logoImg} className={styles.logo} alt="logo"/>
             <nav className={styles.navigation}>
                 <ul className={styles.menu}>
                     <li>
@@ -31,7 +32,7 @@ function Header() {
                     </li>
                 </ul>
                 <div className={isOpen ? styles.menuFadeOpen : styles.menuFade}>
-                    <ul className={isOpen ? styles.menuMedia : styles.delMenu}>
+                    <ul className={styles.menuMedia}>
                         <li>
                             <AnchorLink href="#hello" onClick={handleClick} className={styles.homeMedia}>Home</AnchorLink>
                         </li>

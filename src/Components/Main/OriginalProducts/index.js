@@ -20,7 +20,9 @@ function OriginProducts() {
                 <div className={styles.textWrapper}>
                     <p className={styles.blueText}>Create an account</p>
                     <h2 className={styles.heading}>Discover original products</h2>
-                    <p className={styles.text}>There are more than 950 categories updated daily based on trending websites reviews an users rating.</p>
+                    <p className={styles.text}>
+                        There are more than 950 categories updated daily based on trending websites reviews an users rating.
+                    </p>
                 </div>
             </div>
         </section>

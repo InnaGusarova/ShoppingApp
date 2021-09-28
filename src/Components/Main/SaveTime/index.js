@@ -7,8 +7,7 @@ function SaveTime() {
     return (
         <section className={styles.saveTime}>
             <div className={styles.textWrapper}>
-                <h2 className={styles.heading}>Save time & money with exclusive offers
-from top stores</h2>
+                <h2 className={styles.heading}>Save time & money with exclusive offers from top stores</h2>
                 <button className={styles.button}>Download App</button>
             </div>
             <div className={styles.imgWrapper}>

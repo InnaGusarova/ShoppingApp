@@ -1,7 +1,12 @@
 body {
     margin: 0;
 }
-
+.noScroll {
+    overflow: hidden;
+}
+.scroll {
+    overflow: unset;
+}
 li, button, p, h1, h2 {
     font-family: 'Raleway', sans-serif;
 }
@@ -9,9 +14,6 @@ li, button, p, h1, h2 {
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
-}
-#root {
-    overflow: hidden;
 }
 @media (max-width: 768px) {
     #root {
