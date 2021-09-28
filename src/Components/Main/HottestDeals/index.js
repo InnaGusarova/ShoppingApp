@@ -7,7 +7,7 @@ import styles from './styles.module.scss'
 
 function HottestDeals() {
     return (
-        <section id="deals" className={styles.hottestDeals}>
+        <section className={styles.hottestDeals}>
             <div className={styles.imgWrapper}>
                 <ScrollAnimation animateIn="bounceInUp" duration="2">
                         <img src={mobileDealsImg}  className={styles.imgMobile} alt="monitor"/>

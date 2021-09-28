@@ -46,6 +46,9 @@
     top: 83px;
 }
 @media (max-width: 845px) {
+    .imgPink, .imgGTri {
+        display: none;
+    }
     .socialMedia {
         flex-direction: column;
     }
@@ -59,9 +62,27 @@
     .imgWrapper {
         @include mediaState;
         margin-top: 30px;
-        max-width: 416px;
+        max-width: unset;
+        width: unset;
     }
-    .imgGTri {
-        right: -27px;
+    .imgSoc {
+        margin: 0 auto;
+    }
+}
+@media (max-width: 460px) {
+    .textWrapper {
+        max-width: 334px;
+    }
+    .imgyoutube {
+        left: 28px;
+        top: 37px;
+    }
+    .imgFacebook {
+        left: 77px;
+        top: 54px;
+    }
+    .imgtwitter {
+        left: 125px;
+        top: 70px;
     }
 }

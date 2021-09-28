@@ -21,28 +21,28 @@ function Header() {
                         <AnchorLink href="#hello" className={styles.home}>Home</AnchorLink>
                     </li>
                     <li>
-                        <AnchorLink href="#discover">Team</AnchorLink>
+                        <AnchorLink href="#discover" className={styles.part}>Team</AnchorLink>
                     </li>
                     <li>
-                        <AnchorLink href="#exp">Faq</AnchorLink>
+                        <AnchorLink href="#exp" className={styles.part}>Faq</AnchorLink>
                     </li>
                     <li>
-                    <AnchorLink href="#deals">Contact</AnchorLink>
+                    <AnchorLink href="#deals" className={styles.part}>Contact</AnchorLink>
                     </li>
                 </ul>
                 <div className={isOpen ? styles.menuFadeOpen : styles.menuFade}>
                     <ul className={isOpen ? styles.menuMedia : styles.delMenu}>
                         <li>
-                            <AnchorLink href="#hello" className={styles.homeMedia}>Home</AnchorLink>
+                            <AnchorLink href="#hello" onClick={handleClick} className={styles.homeMedia}>Home</AnchorLink>
                         </li>
                         <li>
-                            <AnchorLink href="#discover" className={styles.part}>Team</AnchorLink>
+                            <AnchorLink href="#discover" onClick={handleClick} className={styles.part}>Team</AnchorLink>
                         </li>
                         <li>
-                            <AnchorLink href="#exp" className={styles.part}>Faq</AnchorLink>
+                            <AnchorLink href="#exp" onClick={handleClick} className={styles.part}>Faq</AnchorLink>
                         </li>
                         <li>
-                            <AnchorLink href="#deals" className={styles.part}>Contact</AnchorLink>
+                            <AnchorLink href="#media" onClick={handleClick} className={styles.part}>Contact</AnchorLink>
                         </li>
                     </ul>
                 </div>

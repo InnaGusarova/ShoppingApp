@@ -11,7 +11,7 @@ import styles from './styles.module.scss'
 function SocialMedia() {
 
     return (
-        <section className={styles.socialMedia}>
+        <section id="media" className={styles.socialMedia}>
             <div className={styles.textWrapper}>
                 <h2 className={styles.heading}>Hey! Follow us on social media so you don’t miss any offer.</h2>
             </div>

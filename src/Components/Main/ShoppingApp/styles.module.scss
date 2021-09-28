@@ -1,7 +1,7 @@
 @import '../../../MainProperties.scss';
 
 .shoppingApp {
-    margin: 0 auto;
+    margin: 0 auto 50px 0;
     position: relative;
     max-width: 1170px;
     width: 100%;
@@ -160,5 +160,10 @@
     }
     .yellowElDown {
         right: 362px;
+    }
+    @media (max-width: 470px) {
+        .pinkEL, .yellowElDown {
+            display: none;
+        }
     }
 }
